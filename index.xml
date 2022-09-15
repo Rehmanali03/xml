@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Students [
+
+<!ELEMENT Students (Student+)>
+
+<!ELEMENT Student (Name, Age)>
+<!ELEMENT Name (FirstName, LastName+, FatherName)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT FatherName (#PCDATA)>
+
+<!ATTLIST Student Gender (Male | Female) "Male">
+]>
+
+<Students>
+    <Student Gender="Male">
+        <Name>
+            <FirstName>Rehman</FirstName>
+            <LastName>Ali</LastName>
+            <FatherName>Liaquat Ali</FatherName>
+        </Name>
+        <Age>20</Age>
+        <Student Gender="Male">
+            <Name>
+                <FirstName>Rehman</FirstName>
+                <LastName>Ali</LastName>
+                <FatherName>Liaquat Ali</FatherName>
+            </Name>
+            <Age>20</Age>
+        </Student>
+        <Student Gender="Male">
+            <Name>
+                <FirstName>Rehman</FirstName>
+                <LastName>Ali</LastName>
+                <FatherName>Liaquat Ali</FatherName>
+            </Name>
+            <Age>20</Age>
+        </Student>
+        <Student Gender="Male">
+            <Name>
+                <FirstName>Rehman</FirstName>
+                <LastName>Ali</LastName>
+                <FatherName>Liaquat Ali</FatherName>
+            </Name>
+            <Age>20</Age>
+        </Student>
+    </Student>
+</Students>
